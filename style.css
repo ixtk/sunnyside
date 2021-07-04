@@ -12,7 +12,7 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
-  background-color: #FFFBF7;
+  background-color: hsl(30, 100%, 98%);
 }
 
 ul {
@@ -59,28 +59,25 @@ h1, h3, .section-link, .header-nav li:last-child {
 .section-link {
   align-self: center;
   margin-top: 1em;
-}
-
-.section-link {
   color: hsl(212, 27%, 19%);
   border-bottom-style: solid;
   border-bottom-width: 7px;
 }
 
 .section-link.underline-yellow {
-  border-bottom-color: hsl(51, 100%, 62%);
-}
-
-.section-link.underline-red {
-  border-bottom-color: hsl(7, 99%, 70%);
+  border-bottom-color: hsla(51, 100%, 49%, .5);
 }
 
 .section-link.underline-yellow:hover {
-  border-bottom-color: hsl(51, 100%, 49%);
+  border-bottom-color: hsla(51, 100%, 49%, 1);
+}
+
+.section-link.underline-red {
+  border-bottom-color: hsla(7, 99%, 70%, .5);
 }
 
 .section-link.underline-red:hover {
-  border-bottom-color: hsl(7, 90%, 60%);
+  border-bottom-color: hsla(7, 99%, 70%, 1);
 }
 
 .section-text {
@@ -135,7 +132,7 @@ header {
   height: 300px;
   width: 100%;
   padding: 2em 0;
-  background-color: #FFFBF7;
+  background-color: hsl(30, 100%, 98%);
   position: absolute;
   top: 150%;
 }
@@ -155,7 +152,7 @@ header {
 
 .header-nav li:last-child a {
   font-size: 16px;
-  background-color: #FED600;
+  background-color: hsl(51, 100%, 50%);
   display: inline-block;
   padding: 1em 1.5em;
   margin: 1em 0;
@@ -166,8 +163,8 @@ header {
 .header-nav-arrow {
   position: absolute;
   border: 10px solid transparent;
-  border-bottom-color: #FFFBF7;
-  border-right-color: #FFFBF7;
+  border-bottom-color: hsl(30, 100%, 98%);
+  border-right-color: hsl(30, 100%, 98%);
   bottom: 100%;
   right: 0;
 }
@@ -247,7 +244,7 @@ header {
   margin-top: auto;
 }
 
-/* GALLERY SECTION */
+/* GALLERY */
 
 .gallery-section {
   display: grid;
@@ -259,7 +256,7 @@ header {
 footer {
   height: 300px;
   padding: 1em 0;
-  background-color: #90D4C6;
+  background-color:	hsl(168, 44%, 70%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,17 +327,17 @@ footer ul li {
 
   .header-nav li a {
     padding: 0 1em;
-    color: #FFFBF7;
+    color: hsl(30, 100%, 98%);
   }
 
   .header-nav ul li:last-child a {
     margin: 0;
-    background-color: #FFFBF7;
+    background-color: hsl(30, 100%, 98%);
   }
 
   .header-nav ul li:last-child a:hover {
-    background-color: #73d0ff;
-    color: #FFFBF7;
+    background-color: hsl(200, 100%, 73%);
+    color: hsl(30, 100%, 98%);
   }
 
   /* SECTIONS */
@@ -405,7 +402,7 @@ footer ul li {
     font-size: 1.3rem;
   }
 
-  /* GALLERY SECTION */
+  /* GALLERY */
 
   .gallery-section {
     grid-template-columns: repeat(4, auto)

@@ -10,7 +10,11 @@ menuIcon.addEventListener('click', _ => {
 })
 
 window.addEventListener('resize', _ => {
-  if (window.innerWidth >= 768) {
+  /*
+    remove inline styles added with menu.style.display
+    so that external stylesheet has priority
+  */
+  if (window.innerWidth >= 768 && menu.hasAttribute('style')) {
     menu.removeAttribute('style')
   }
 })

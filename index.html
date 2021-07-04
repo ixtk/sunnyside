@@ -14,7 +14,7 @@
         <img class="header-logo" src="./images/logo.svg" alt="Sunnyside logo">
         <img class="header-nav-icon" src="./images/icon-hamburger.svg" alt="hamburger menu icon">
 
-        <nav class="header-nav">
+        <nav class="header-nav" aria-label="Main">
           <div class="header-nav-arrow"></div>
           <ul>
             <li><a href="#">About</a></li>
@@ -108,7 +108,7 @@
       </div>
     </section>
 
-    <section class="gallery-section">
+    <div class="gallery-section">
       <picture>
         <source media="(min-width: 700px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
         <img class="gallery-image" src="./images/mobile/image-gallery-milkbottles.jpg" alt="gallery image">
@@ -128,13 +128,14 @@
         <source media="(min-width: 700px)" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
         <img class="gallery-image" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="gallery image">
       </picture>
-    </section>
+    </div>
 
   </main>
   <footer>
     <img class="footer-logo" src="./images/logo_green.svg" alt="Sunnyside logo">
 
-    <nav class="footer-nav">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role -->
+    <nav class="footer-nav" aria-label="Main">
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
